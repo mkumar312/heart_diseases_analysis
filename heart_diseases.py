@@ -11,6 +11,8 @@ import numpy as np
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
+os.system("pip install plotly")
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
 from sklearn.impute import SimpleImputer
@@ -332,3 +334,4 @@ st.dataframe(filtered_df.head(50), use_container_width=True)
 # small footer
 st.write("---")
 st.caption("Built with Streamlit • EDA pipeline: quick summaries, visualizations, and model-guided feature ranking.")
+
